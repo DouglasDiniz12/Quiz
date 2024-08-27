@@ -26,7 +26,7 @@ const Questions = () => {
   return (
     <div  id="question">
       <p>pergunta{quizState.currentQuestoes+1} de {quizState.questions.length}</p>
-      <h2>pergunta atual{currentQuestoes.question}</h2>
+      <h2>Pergunta atual: {currentQuestoes.question}</h2>
       <p>{currentQuestoes.options.map((option)=>(
         <Option option={option} key={option} answer={currentQuestoes.answer} selecionar={()=>Onselecionar(option)} />
       ))}</p>
